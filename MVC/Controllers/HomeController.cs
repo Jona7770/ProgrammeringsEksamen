@@ -21,21 +21,21 @@ namespace MVC.Controllers
             return client;
         }
 
-        //public async Task<IActionResult> Index()
-        //{
-        //    var client = GetClient();
-        //    HttpResponseMessage response = await client.GetAsync($@"api/Flights");
+        public async Task<IActionResult> NewsHomePage()
+        {
+            var client = GetClient();
+            HttpResponseMessage response = await client.GetAsync($@"api/News");
 
-        //    if (response.IsSuccessStatusCode)
-        //    {
-        //        var Model = await response.Content.ReadAsAsync<List<FlightProxy>>();
-        //        return View(Model);
-        //    }
-        //    else
-        //    {
-        //        return BadRequest();
-        //    }
-        //}
+            if (response.IsSuccessStatusCode)
+            {
+                var Model = await response.Content.ReadAsAsync<List<NewsProxy>>();
+                return View(Model);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
 
         public IActionResult About()
         {
