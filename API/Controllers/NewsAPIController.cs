@@ -26,7 +26,7 @@ namespace API.Controllers
         public ActionResult<IEnumerable<News>> AllNews()
         {
             List<News> AllNews = _context.MultipleNews.ToList();
-            if (MultipleNews == null)
+            if (AllNews == null)
             {
                 return NotFound();
             }
@@ -34,8 +34,9 @@ namespace API.Controllers
             {
                 return BadRequest();
             }
-            return MultipleNews;
-            
+            return AllNews;
+        }
+
 
         // GET: api/News1
         [HttpGet]
