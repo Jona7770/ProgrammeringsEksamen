@@ -20,6 +20,5 @@ namespace API.Models
             //List<> HashTagsList = Arrays.asList(Hashtags.split(","));
             [Timestamp]
             public byte[] Timestamp { get; set; }
-
     }
 }
