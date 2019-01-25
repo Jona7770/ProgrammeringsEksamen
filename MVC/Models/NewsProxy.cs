@@ -16,8 +16,8 @@ namespace MVC.Models
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }
         public string HashTags { get; set; }
-        //string HashTag = "...";
-        //List<> HashTagList = Arrays.asList(Hashtag.split(","));
+        //string HashTags = "...";
+        //List<> HashTagsList = Arrays.asList(Hashtags.split(","));
         [Timestamp]
         public byte[] Timestamp { get; set; }
     }

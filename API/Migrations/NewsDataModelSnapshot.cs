@@ -43,7 +43,7 @@ namespace API.Migrations
 
                     b.HasKey("NewsId");
 
-                    b.ToTable("Multiplenews");
+                    b.ToTable("MultipleNews");
                 });
 #pragma warning restore 612, 618
         }

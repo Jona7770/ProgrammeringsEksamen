@@ -24,7 +24,7 @@ namespace MVC.Controllers
         public async Task<IActionResult> NewsHomePage()
         {
             var client = GetClient();
-            HttpResponseMessage response = await client.GetAsync($@"api/News");
+            HttpResponseMessage response = await client.GetAsync($@"api/NewsAPI");
 
             if (response.IsSuccessStatusCode)
             {

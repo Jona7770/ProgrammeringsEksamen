@@ -9,12 +9,12 @@ namespace API.Migrations
         {
             migrationBuilder.RenameColumn(
                 name: "CratedDate",
-                table: "Multiplenews",
+                table: "MultipleNews",
                 newName: "CreatedDate");
 
             migrationBuilder.AddColumn<byte[]>(
                 name: "Timestamp",
-                table: "Multiplenews",
+                table: "MultipleNews",
                 rowVersion: true,
                 nullable: true);
         }
@@ -23,11 +23,11 @@ namespace API.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "Timestamp",
-                table: "Multiplenews");
+                table: "MultipleNews");
 
             migrationBuilder.RenameColumn(
                 name: "CreatedDate",
-                table: "Multiplenews",
+                table: "MultipleNews",
                 newName: "CratedDate");
         }
     }

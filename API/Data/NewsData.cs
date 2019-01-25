@@ -14,7 +14,7 @@ namespace API.Data
             {
                 Database.EnsureCreated();
             }
-         public DbSet<News> Multiplenews { get; set; }
+         public DbSet<News> MultipleNews { get; set; }
         
     }
 }
