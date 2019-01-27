@@ -1,4 +1,5 @@
-﻿using System;
+﻿using API.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,4 +22,7 @@ namespace API.Models
             [Timestamp]
             public byte[] Timestamp { get; set; }
     }
+    
+        
+  
 }
