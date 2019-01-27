@@ -16,9 +16,9 @@ namespace API.Data
             }
          public DbSet<News> MultipleNews { get; set; }
 
-        MultipleNews Virk = MultipleNews()
+        NewsData _newsdata = new NewsData();
 
-        public News newsItem = new News()
+        public News MultipleNews = new News()
         {
             NewsId = 1,
             Author = "Jonas Johansen",
@@ -27,7 +27,7 @@ namespace API.Data
             CreatedDate = DateTime.Now,
             HashTags = "#PleaseWork,#HåberDetVirker"
         };
-        Virk.News.Add(newsItem);
-        Virk.SaveChanges();
+        _newData.News.Add(MultipleNews);
+        _newData.SaveChanges();
     }
 }
